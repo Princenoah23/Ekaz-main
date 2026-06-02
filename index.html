@@ -17,6 +17,7 @@
             animation: float 4s ease-in-out infinite, border-glow 5s infinite alternate;
         }
 
+        /* Overlay para sa Music Start Button */
         #start-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 100; display: flex; align-items: center; justify-content: center; }
 
         @keyframes slideIn { from { transform: translateX(-20px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
@@ -34,6 +35,7 @@
 </head>
 <body class="text-white min-h-screen flex items-center justify-center p-4">
 
+    <!-- Music Start Overlay -->
     <div id="start-overlay">
         <button onclick="startExperience()" class="px-8 py-4 bg-cyan-500 rounded-full font-bold text-black neon-animate">
             <i class="fa-solid fa-play mr-2"></i> ENTER EKAZA ELITE
@@ -68,38 +70,6 @@
                 <summary class="font-bold text-green-400 uppercase tracking-widest hover:text-white transition">How to install?</summary>
                 <div class="install-content mt-3 p-3 bg-black/40 text-green-300 rounded-r-lg">
                     <p>1. Download the file.</p>
-                    <p>2. Extract using ZArchiver.</p>
-                    <p>3. Apply via Root/KernelSU.</p>
-                </div>
-            </details>
-            
-            <a href="https://t.me/+zC2lt0eBLQllMGJl" target="_blank" class="block">
-                <button class="w-full bg-transparent py-4 rounded-xl font-bold border border-cyan-500 neon-animate hover:bg-cyan-500/20 transition">
-                    <i class="fa-brands fa-telegram mr-2"></i> JOIN TELEGRAM
-                </button>
-            </a>
-
-            <a href="ILAGAY_MO_DITO_TIKTOK_LINK" target="_blank" class="block group">
-                <button class="w-full bg-transparent py-4 rounded-xl font-bold border border-pink-500 transition-all duration-300 neon-animate group-hover:scale-[1.02] group-hover:bg-pink-500/20 group-hover:border-pink-300">
-                    <i class="fa-brands fa-tiktok mr-2 animate-bounce"></i> FOLLOW TIKTOK
-                </button>
-            </a>
-        </div>
-        
-        <p class="mt-8 text-white/50 text-[9px] tracking-widest uppercase">© 2026 EKAZA DEVELOPMENT | @PRINCE</p>
-    </div>
-
-    <script>
-        const audio = new Audio('https://files.catbox.moe/6jbm5g.mp3');
-        audio.loop = true;
-
-        function startExperience() {
-            document.getElementById('start-overlay').style.display = 'none';
-            audio.play();
-        }
-    </script>
-</body>
-</html>
                     <p>2. Extract using ZArchiver.</p>
                     <p>3. Apply via Root/KernelSU.</p>
                 </div>
